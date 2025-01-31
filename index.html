@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WSU College Hill Parking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WSU College Hill Parking Information</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#parking-info">Parking Info</a></li>
+          <li><a href="#shuttle-info">Shuttle Info</a></li>
+          <li><a href="pages/collaborators.html">Collaborators</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Embedded ArcGIS Map -->
+      <section id="map">
+        <h2>Parking Map</h2>
+        <iframe
+          src="https://www.arcgis.com/apps/Embed/index.html?webmap=YOUR_ARCGIS_MAP_ID&extent=YOUR_MAP_EXTENT"
+          width="100%"
+          height="500px"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+
+      <!-- Parking Information -->
+      <section id="parking-info">
+        <h2>Parking Information</h2>
+        <p>Find all the details about parking on College Hill below:</p>
+        <ul>
+          <li><strong>Parking Zones:</strong> A, B, C, and D.</li>
+          <li><strong>Permit Required:</strong> Yes, from 8 AM to 5 PM.</li>
+          <li><strong>Visitor Parking:</strong> Available in Zone D.</li>
+          <li><strong>Cost:</strong> $5/day for visitors.</li>
+        </ul>
+      </section>
+
+      <!-- Shuttle Information -->
+      <section id="shuttle-info">
+        <h2>Shuttle Information</h2>
+        <p>
+          The WSU Shuttle service provides convenient transportation around
+          campus and College Hill. Key details:
+        </p>
+        <ul>
+          <li>
+            <strong>Schedule:</strong> Every 15 minutes from 7 AM to 10 PM.
+          </li>
+          <li>
+            <strong>Routes:</strong> Main Campus, College Hill, and Downtown.
+          </li>
+          <li>
+            <strong>Cost:</strong> Free for students and staff with valid ID.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact Information -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For further inquiries, please contact:</p>
+        <p><strong>Email:</strong> parking@wsu.edu</p>
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 WSU College Hill Parking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
