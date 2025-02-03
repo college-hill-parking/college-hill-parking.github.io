@@ -1,11 +1,15 @@
-/* General Styles */
-body {
+
+  /* General Styles */
+body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
     background-color: #f4f4f4;
     color: #333;
-  }
+}
+
   
   header {
     background-color: #981e32; /* WSU Crimson */
@@ -96,3 +100,4 @@ body {
   .collaborator p {
     margin: 5px 0;
   }
+  
