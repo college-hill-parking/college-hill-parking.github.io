@@ -10,14 +10,14 @@ body, html {
     color: #333;
 }
 
-  
   header {
     background-color: #981e32; /* WSU Crimson */
     color: #fff;
-    padding: 20px;
+    padding: 10px 20px; /* Reduce padding for less space inside the header */
+    margin: 0; /* Ensure there's no extra margin */
     text-align: center;
-  }
-  
+}
+
   header h1 {
     margin: 0;
   }
@@ -76,6 +76,16 @@ body, html {
     margin-bottom: 10px;
   }
   
+/* Map Section */
+
+.map-container iframe {
+  width: 100%; /* Makes it responsive to the screen width */
+  max-width: 100%; /* Ensures it does not exceed the container */
+  height: 480px; /* Keeps the height fixed, adjust if needed */
+  border: none; /* Optional: Removes default border */
+}
+
+
   /* Collaborators Section */
   .collaborator-list {
     display: flex;
