@@ -1,113 +1,116 @@
-
-  /* General Styles */
+/* ============================= */
+/* General Styles */
+/* ============================= */
 body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-  header {
-    background-color: #981e32; /* WSU Crimson */
-    color: #fff;
-    padding: 10px 20px; /* Reduce padding for less space inside the header */
-    margin: 0; /* Ensure there's no extra margin */
-    text-align: center;
+/* ============================= */
+/* Header Styles */
+/* ============================= */
+header {
+  background-color: #981e32; /* WSU Crimson */
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between; /* Aligns title and menu */
+  align-items: center;
+  position: relative;
 }
 
-  header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  footer {
-    background-color: #981e32; /* WSU Crimson */
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  iframe {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  h2 {
-    color: #981e32; /* WSU Crimson */
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-/* Map Section */
-
-.map-container iframe {
-  width: 100%; /* Makes it responsive to the screen width */
-  max-width: 100%; /* Ensures it does not exceed the container */
-  height: 480px; /* Keeps the height fixed, adjust if needed */
-  border: none; /* Optional: Removes default border */
+/* ============================= */
+/* Navigation Bar - Desktop View */
+/* ============================= */
+nav {
+  display: flex;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Horizontally aligned for desktop */
+}
 
-  /* Collaborators Section */
-  .collaborator-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #c62839; /* Slight highlight on hover */
+  border-radius: 5px;
+}
+
+/* ============================= */
+/* Hamburger Menu - Mobile Only */
+/* ============================= */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hidden on large screens */
+  padding: 10px;
+}
+
+/* ============================= */
+/* Responsive Navigation for Mobile */
+/* ============================= */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Show hamburger menu */
   }
-  
-  .collaborator {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    flex: 1 1 calc(33.333% - 40px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .nav-menu {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #981e32;
+      width: 100%;
+      display: none; /* Initially hidden */
+      flex-direction: column;
+      text-align: center;
+      transition: max-height 0.3s ease-in-out;
   }
-  
-  .collaborator h3 {
-    margin-top: 0;
-    color: #981e32; /* WSU Crimson */
+
+  .nav-menu ul {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
   }
-  
-  .collaborator p {
-    margin: 5px 0;
+
+  .nav-menu ul li {
+      width: 100%;
+      padding: 10px 0;
   }
-  
+
+  .nav-menu ul li a {
+      display: block;
+      width: 100%;
+      padding: 12px;
+  }
+
+  .nav-menu ul li a:hover {
+      background-color: #c62839;
+  }
+
+  /* Show menu when toggled */
+  .nav-open {
+      display: flex !important;
+  }
+}
