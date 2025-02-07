@@ -9,6 +9,7 @@ body, html {
   width: 100%;
   background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
 /* ============================= */
@@ -22,6 +23,11 @@ header {
   justify-content: space-between; /* Aligns title and menu */
   align-items: center;
   position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
 /* ============================= */
@@ -73,44 +79,98 @@ nav ul li a:hover {
 /* ============================= */
 @media (max-width: 768px) {
   .menu-toggle {
-      display: block; /* Show hamburger menu */
+    display: block; /* Show hamburger menu */
   }
-
+  nav {
+    display: none; /* Hide desktop navigation */
+  }
   .nav-menu {
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #981e32;
-      width: 100%;
-      display: none; /* Initially hidden */
-      flex-direction: column;
-      text-align: center;
-      transition: max-height 0.3s ease-in-out;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #981e32;
+    width: 100%;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    text-align: center;
+    transition: max-height 0.3s ease-in-out;
   }
-
   .nav-menu ul {
-      flex-direction: column;
-      width: 100%;
-      padding: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
   }
-
   .nav-menu ul li {
-      width: 100%;
-      padding: 10px 0;
+    width: 100%;
+    padding: 10px 0;
   }
-
   .nav-menu ul li a {
-      display: block;
-      width: 100%;
-      padding: 12px;
+    display: block;
+    width: 100%;
+    padding: 12px;
   }
-
   .nav-menu ul li a:hover {
-      background-color: #c62839;
+    background-color: #c62839;
   }
-
   /* Show menu when toggled */
   .nav-open {
-      display: flex !important;
+    display: flex !important;
   }
+}
+
+/* ============================= */
+/* Main Content Styles */
+/* ============================= */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collaborator-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.collaborator {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.collaborator h3 {
+  margin-top: 0;
+  color: #981e32;
+}
+
+.collaborator p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .collaborator {
+    flex: 1 1 100%;
+  }
+}
+
+/* ============================= */
+/* Footer Styles */
+/* ============================= */
+footer {
+  background-color: #981e32; /* WSU Crimson */
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
 }
