@@ -1,7 +1,7 @@
 /* ============================= */
 /* General Styles */
 /* ============================= */
-body, html {
+html, body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,6 +11,28 @@ body, html {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Pushes footer down */
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: #981e32; /* WSU Crimson */
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
 }
 
 /* ============================= */
@@ -223,21 +245,17 @@ main {
   background-color: #0056b3;
 }
 
-
 /* ============================= */
-/* Footer Styles */
+/* Contact Info */
 /* ============================= */
-footer {
-  background-color: #981e32; /* WSU Crimson */
-  color: #fff;
-  text-align: center;
-  padding: 15px 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.contact-info a {
+  text-decoration: none;
+  color: #d9534f; /* Light red */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
 
-footer p {
-  margin: 0;
-  font-size: 14px;
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #981e32; /* WSU Crimson Red */
 }
