@@ -159,6 +159,38 @@ main {
     flex: 1 1 100%;
   }
 }
+/* ============================= */
+/* Legend Style */
+/* ============================= */
+
+.legend {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  width: 97%;
+  font-family: Arial, sans-serif;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+}
+
 
 /* ============================= */
 /* Footer Styles */
