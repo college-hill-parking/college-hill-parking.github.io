@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameday Information - WSU College Hill Parking</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gameday Information</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="gameday.html">Gameday Info</a></li>
+          <li><a href="collaborators.html">Collaborators</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- General Information -->
+      <section id="general-info">
+        <h2>General Information</h2>
+        <ul>
+          <li>
+            All affected parking lots (see map) used for home football game
+            event parking will close at 1pm.
+          </li>
+          <li>
+            Permit holders without a Cougar Athletic Fund (CAF) permit must move
+            their vehicle by 1pm.
+          </li>
+          <li>
+            <strong>Disability Parking:</strong> Designated disability spaces
+            remain available for permit holders.
+          </li>
+          <li>Stadium Way Road closes 3 hours before kickoff.</li>
+        </ul>
+      </section>
+
+      <!-- Permit Holder Parking Options -->
+      <section id="permit-options">
+        <h2>Permit Holder Parking Options</h2>
+        <ul>
+          <li>
+            <strong>FREE Park & Ride Shuttle</strong> available all day. Select
+            lots operate from 7am.
+          </li>
+          <li>All Park & Ride shuttles run until 11:30pm.</li>
+          <li>
+            Permit holders can park in their lot until 1pm, then relocate to a
+            <strong>FREE Park & Ride lot</strong>.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Park & Ride Lot Information -->
+      <section id="park-ride-info">
+        <h2>Park & Ride Lot Information</h2>
+        <ul>
+          <li>
+            <strong>Lot 1 (Valley Road Playfields):</strong> Crimson and Gray
+            Express buses every 8-10 minutes.
+          </li>
+          <li>
+            <strong>Lot 3 (Terre View & Hwy 270):</strong> Wheatland Express bus
+            runs in the morning; Pullman Transit bus takes over after 4pm.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Church Parking Information -->
+      <section id="church-parking">
+        <h2>Church Parking for College Gameday</h2>
+        <p>
+          Additional parking may be available at the following churches
+          (donations requested $20 - $40 on average):
+        </p>
+        <ul>
+          <li>
+            <strong>Pullman Presbyterian Church</strong><br />1630 NE Stadium
+            Way
+            <button class="toggle-btn" onclick="toggleDetails('presbyterian')">
+              View Details
+            </button>
+            <div id="presbyterian" class="parking-details">
+              Price: $20 - $30 (varies by game)
+            </div>
+          </li>
+          <li>
+            <strong>Concordia Lutheran Church</strong><br />1015 NE Orchard Dr.
+            <button class="toggle-btn" onclick="toggleDetails('concordia')">
+              View Details
+            </button>
+            <div id="concordia" class="parking-details">
+              Price: $20 - $40 (varies based on game attendance)
+            </div>
+          </li>
+          <li>
+            <strong>St. James Pullman Church</strong><br />1410 NE Stadium Way
+            <button class="toggle-btn" onclick="toggleDetails('stjames')">
+              View Details
+            </button>
+            <div id="stjames" class="parking-details">
+              - $30 donation per game (cash only) <br />
+              - No vehicles larger than a pickup truck <br />
+              - No RVs or camping <br />
+              - First come, first serve <br />
+              - Lot closes when full, must vacate by 7 AM next day
+            </div>
+          </li>
+          <li>
+            <strong>Community Congregational United Church of Christ</strong
+            ><br />525 NE Campus Ave.
+          </li>
+          <li><strong>Sacred Heart Church</strong><br />400 NE Ash Street.</li>
+          <li>
+            <strong>Trinity Lutheran Church</strong><br />1300 NE Lybecker Rd.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 WSU College Hill Parking. All rights reserved.</p>
+    </footer>
+
+    <!-- Reference script.js for toggle functionality -->
+    <script src="../script.js"></script>
+  </body>
+</html>
