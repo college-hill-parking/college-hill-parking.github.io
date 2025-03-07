@@ -21,7 +21,7 @@ main {
 }
 
 footer {
-  background-color: #981e32; /* WSU Crimson */
+  background-color: #013964; /* WSU Crimson */
   color: #fff;
   text-align: center;
   padding: 15px 20px;
@@ -39,7 +39,7 @@ footer p {
 /* Header Styles */
 /* ============================= */
 header {
-  background-color: #981e32; /* WSU Crimson */
+  background-color: #013964; /* WSU Crimson */
   color: #fff;
   padding: 15px 20px;
   display: flex;
@@ -80,7 +80,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #c62839; /* Slight highlight on hover */
+  background-color: #76abd7; /* Slight highlight on hover */
   border-radius: 5px;
 }
 
@@ -113,7 +113,7 @@ nav ul li a:hover {
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #981e32;
+    background-color: #013964;
     width: 100%;
     display: none; /* Initially hidden */
     flex-direction: column;
@@ -135,7 +135,7 @@ nav ul li a:hover {
     padding: 12px;
   }
   .nav-menu ul li a:hover {
-    background-color: #c62839;
+    background-color: #76abd7;
   }
   /* Show menu when toggled */
   .nav-open {
