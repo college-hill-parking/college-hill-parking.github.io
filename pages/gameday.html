@@ -9,7 +9,9 @@
   <body>
     <header>
       <h1>Gameday Information</h1>
-      <nav>
+      <button class="menu-toggle">&#9776;</button>
+      <!-- Hamburger menu -->
+      <nav class="nav-menu">
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="gameday.html">Gameday Info</a></li>
@@ -20,6 +22,108 @@
     </header>
 
     <main>
+      <!-- Embedded Map -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/d/u/1/embed?mid=1gSsbjj8XjL7Lxfg2z9Fc0LkraPyycZI&ehbc=2E312F&noprof=1"
+          width="100%"
+          height="480"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Map Legend -->
+      <div
+        class="legend"
+        style="
+          margin-top: 1em;
+          padding: 1em;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        "
+      >
+        <h3>Map Key - Shuttle Zones</h3>
+        <div
+          class="legend-item"
+          style="display: flex; align-items: center; margin-bottom: 0.5em"
+        >
+          <span
+            class="color-box"
+            style="
+              width: 20px;
+              height: 20px;
+              background-color: rgb(9, 113, 56);
+              margin-right: 10px;
+              border-radius: 3px;
+            "
+          ></span>
+          <span
+            ><strong>Parking Zone “A”</strong>: Permit required daily, 5:00 p.m.
+            – 8:00 a.m.</span
+          >
+        </div>
+        <div
+          class="legend-item"
+          style="display: flex; align-items: center; margin-bottom: 0.5em"
+        >
+          <span
+            class="color-box"
+            style="
+              width: 20px;
+              height: 20px;
+              background-color: rgb(255, 99, 71);
+              margin-right: 10px;
+              border-radius: 3px;
+            "
+          ></span>
+          <span
+            ><strong>Shuttle Stop “Crimson Express”</strong>: Runs every 8–10
+            minutes on game day</span
+          >
+        </div>
+        <div
+          class="legend-item"
+          style="display: flex; align-items: center; margin-bottom: 0.5em"
+        >
+          <span
+            class="color-box"
+            style="
+              width: 20px;
+              height: 20px;
+              background-color: rgb(70, 130, 180);
+              margin-right: 10px;
+              border-radius: 3px;
+            "
+          ></span>
+          <span
+            ><strong>Shuttle Stop “Gray Express”</strong>: Connects park & ride
+            lots to stadium entrance</span
+          >
+        </div>
+      </div>
+
+      <!-- Disclaimer -->
+      <p
+        style="
+          margin-top: 1em;
+          font-size: 0.95em;
+          background-color: #fff3cd;
+          padding: 1em;
+          border-left: 5px solid #ffc107;
+        "
+      >
+        <strong>Disclaimer:</strong> The information provided above (including
+        shuttle schedules and parking zone details) is based on previous years
+        and is subject to change. For the most accurate and up-to-date
+        information regarding football game day transit, please visit
+        <a
+          href="https://www.pullman-wa.gov/services/transit/football_service.php"
+          target="_blank"
+          >Pullman Transit's official Football Service page</a
+        >. Updated details are typically released shortly before the football
+        game series begins.
+      </p>
+
       <!-- General Information -->
       <section id="general-info">
         <h2>General Information</h2>
@@ -114,10 +218,36 @@
           <li>
             <strong>Community Congregational United Church of Christ</strong
             ><br />525 NE Campus Ave.
+            <button class="toggle-btn" onclick="toggleDetails('ccucc')">
+              View Details
+            </button>
+            <div id="ccucc" class="parking-details">
+              - $20 parking<br />
+              - Cars only (no RVs or oversized vehicles)<br />
+              - Game day only
+            </div>
           </li>
-          <li><strong>Sacred Heart Church</strong><br />400 NE Ash Street.</li>
+          <li>
+            <strong>Sacred Heart Church</strong><br />400 NE Ash Street.
+            <button class="toggle-btn" onclick="toggleDetails('sacredheart')">
+              View Details
+            </button>
+            <div id="sacredheart" class="parking-details">
+              - Donation $5–$10<br />
+              - Availability may vary depending on game
+            </div>
+          </li>
           <li>
             <strong>Trinity Lutheran Church</strong><br />1300 NE Lybecker Rd.
+            <button class="toggle-btn" onclick="toggleDetails('trinity')">
+              View Details
+            </button>
+            <div id="trinity" class="parking-details">
+              - $20 per parking spot<br />
+              - Game day and limited overnight RV camping<br />
+              - 90–105 spots available<br />
+              - Multiple spots may be needed for larger vehicles
+            </div>
           </li>
         </ul>
       </section>
@@ -127,7 +257,17 @@
       <p>&copy; 2025 City of Pullman Commerce. All rights reserved.</p>
     </footer>
 
-    <!-- Reference script.js for toggle functionality -->
+    <!-- Script for toggling parking details -->
+    <script>
+      function toggleDetails(id) {
+        const el = document.getElementById(id);
+        if (el.style.display === "block") {
+          el.style.display = "none";
+        } else {
+          el.style.display = "block";
+        }
+      }
+    </script>
     <script src="../script.js"></script>
   </body>
 </html>
