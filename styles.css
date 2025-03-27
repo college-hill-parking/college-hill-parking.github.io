@@ -1,6 +1,8 @@
 /* ============================= */
 /* General Styles */
 /* ============================= */
+
+
 html, body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -21,7 +23,7 @@ main {
 }
 
 footer {
-  background-color: #00223C; /* WSU Crimson */
+  background-color: #00223C; 
   color: #fff;
   text-align: center;
   padding: 15px 20px;
@@ -38,19 +40,52 @@ footer p {
 /* ============================= */
 /* Header Styles */
 /* ============================= */
+
 header {
-  background-color: #013964; /* WSU Crimson */
+  background-color: #013964;
   color: #fff;
   padding: 15px 20px;
   display: flex;
-  justify-content: space-between; /* Aligns title and menu */
+  justify-content: space-between;
   align-items: center;
-  position: relative;
+  flex-wrap: wrap;
 }
 
+/* Group the logo + heading together */
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between logo and title */
+}
+
+/* Logo style */
+.header-logo {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Title style */
 header h1 {
   margin: 0;
   font-size: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-content {
+    margin-bottom: 10px;
+  }
+
+  .header-logo {
+    height: 50px;
+  }
 }
 
 /* ============================= */
@@ -245,17 +280,4 @@ main {
   background-color: #0056b3;
 }
 
-/* ============================= */
-/* Contact Info */
-/* ============================= */
-.contact-info a {
-  text-decoration: none;
-  color: #d9534f; /* Light red */
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
-}
 
-.contact-info a:hover {
-  text-decoration: underline;
-  color: #981e32; /* WSU Crimson Red */
-}
