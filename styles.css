@@ -60,7 +60,7 @@ header {
 
 /* Logo style */
 .header-logo {
-  height: 120px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -69,7 +69,7 @@ header {
 /* Title style */
 header h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 /* Responsive adjustments */
@@ -118,6 +118,33 @@ nav ul li a:hover {
   background-color: #76abd7; /* Slight highlight on hover */
   border-radius: 5px;
 }
+
+
+/* ============================= */
+/* Main Navigation - Enlarged Variant */
+/* ============================= */
+.main-nav {
+
+  padding: 20px 30px;
+
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+
+.main-nav ul {
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.main-nav ul li a {
+  padding: 12px 20px;
+
+}
+
+
+
 
 /* ============================= */
 /* Hamburger Menu - Mobile Only */
