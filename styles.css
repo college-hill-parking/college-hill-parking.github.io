@@ -139,7 +139,13 @@ nav ul li a:hover {
   nav {
     display: none; /* Hide desktop navigation */
   }
-
+  .header-logo {
+    height: 80px;
+    width: 80px;
+    top: 10px;
+    left: 10px;
+  }
+ 
   
   .nav-menu {
     position: absolute;
