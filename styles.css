@@ -41,44 +41,53 @@ footer p {
 /* Header Styles */
 /* ============================= */
 
+/* Header Styles */
 header {
   background-color: #013964;
   color: #fff;
-  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  /* Add relative positioning */
+  position: relative;
+  padding: 15px; /* Ensure padding accommodates the logo */
 }
 
 /* Group the logo + heading together */
 .header-content {
   display: flex;
   align-items: center;
-  gap: 15px; /* space between logo and title */
+  gap: 15px; /* Space between logo and title */
 }
 
 /* Logo style */
 .header-logo {
-  height: 80px;
-  width: auto;
-  object-fit: contain;
+  position: absolute; /* Take the logo out of the normal flow */
+  top: 0; /* Align it to the top of the header */
+  left: 0;
+ padding-left: 40px;
+  height: 125px;
+
+  /* Set a fixed width (adjust this to control distortion) */
+  object-fit: fill; /* Force the image to fill the specified dimensions */
   display: block;
 }
-
 /* Title style */
 header h1 {
   margin: 0;
   font-size: 18px;
 }
 
-
-
 /* ============================= */
 /* Navigation Bar - Desktop View */
 /* ============================= */
 nav {
   display: flex;
+  padding-top: 60px;
+  padding-right: 20px;
+  align-items: flex-end; /* Align the nav links to the bottom */
 }
 
 nav ul {
@@ -86,6 +95,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex; /* Horizontally aligned for desktop */
+  align-items: flex-end; /* Align the text to the bottom */
 }
 
 nav ul li {
@@ -96,42 +106,16 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 15px;
+  font-size: 22.5px; /* Increase the font size */
+  padding: 10px 15px; /* Add padding to make the text larger and more clickable */
   transition: background 0.3s ease;
+  line-height: 1.2; /* Adjust line height for better alignment */
 }
 
 nav ul li a:hover {
   background-color: #76abd7; /* Slight highlight on hover */
   border-radius: 5px;
 }
-
-
-/* ============================= */
-/* Main Navigation - Enlarged Variant */
-/* ============================= */
-.main-nav {
-
-  padding: 20px 30px;
-
-  font-size: 18px;
-  margin-top: 10px;
-
-}
-
-.main-nav ul {
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.main-nav ul li a {
-  padding: 12px 20px;
-
-}
-
-
-
-
 /* ============================= */
 /* Hamburger Menu - Mobile Only */
 /* ============================= */
