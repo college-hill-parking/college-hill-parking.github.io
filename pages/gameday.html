@@ -16,7 +16,6 @@
         />
       </div>
       <button class="menu-toggle">&#9776;</button>
-      <!-- Hamburger menu -->
       <nav class="nav-menu">
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -28,31 +27,84 @@
     </header>
 
     <main>
-      <!-- Embedded Map -->
       <div class="map-container">
         <iframe
           src="https://www.google.com/maps/d/u/1/embed?mid=1BpixiCz2cl6-01PydOEYcy5AHYHviHU&ehbc=2E312F&noprof=1"
           width="100%"
           height="480"
           allowfullscreen
-        >
-        </iframe>
+        ></iframe>
       </div>
 
+      <!-- Parking Zone Disclaimer -->
+      <p
+        style="
+          margin-top: 1.5em;
+          margin-bottom: 1em;
+          font-size: 0.95em;
+          background-color: #f8d7da;
+          padding: 1em;
+          border-left: 5px solid #dc3545;
+          color: #721c24;
+        "
+      >
+        <strong>Disclaimer:</strong> The zones shown below represent
+        **restricted parking areas** that require a valid permit at all times
+        during their stated hours. A permit is still required during game days,
+        events, or weekends unless otherwise stated. Always check posted
+        signage.
+      </p>
       <div class="legend">
         <div class="legend-item">
           <span
             class="color-box"
-            style="background-color: rgb(1, 87, 155)"
+            style="background-color: rgb(9, 113, 56)"
           ></span>
+          <span class="label"
+            ><strong>Parking Zone “A”</strong>: Permit required daily, 5:00 p.m.
+            – 8:00 a.m.</span
+          >
+        </div>
+        <div class="legend-item">
+          <span
+            class="color-box"
+            style="background-color: rgb(230, 81, 0)"
+          ></span>
+          <span class="label"
+            ><strong>Parking Zone “B”</strong>: Permit required Monday - Friday,
+            7:00 a.m. – 6:00 p.m. No permit required weekends and national
+            holidays.</span
+          >
+        </div>
+        <div class="legend-item">
+          <span
+            class="color-box"
+            style="background-color: rgb(249, 168, 37)"
+          ></span>
+          <span class="label"
+            ><strong>Parking Zone “C”</strong>: Permit required daily, 6:00 a.m.
+            – 6:00 p.m.</span
+          >
+        </div>
+        <div class="legend-item">
+          <span
+            class="color-box"
+            style="background-color: rgb(165, 39, 20)"
+          ></span>
+          <span class="label"
+            ><strong>Parking Zone “D”</strong>: Permit required at all
+            times.</span
+          >
+        </div>
+        <div class="legend-item">
+          <span class="color-box" style="background-color: #5d89b8"></span>
           <span class="label">
-            <strong>Paid Parking</strong>: Parking for a fee (see “Paid Parking”
-            for more information).
+            <strong>Paid Parking Lots</strong>: Paid parking on this map shows
+            potential locations offering gameday parking for a fee.
           </span>
         </div>
       </div>
 
-      <!-- Disclaimer -->
       <p
         style="
           margin-top: 1em;
@@ -62,88 +114,94 @@
           border-left: 5px solid #ffc107;
         "
       >
-        <strong>Disclaimer:</strong> The information provided below (including
-        shuttle schedules and parking zone details) is based on previous years
-        and is subject to change. For the most accurate and up-to-date
-        information regarding football game day transit, please visit
+        <strong>Disclaimer:</strong> The information provided is based on prior
+        years and is subject to change. In the past, Pullman Transit and WSU
+        Transit have partnered to offer shuttle services during football game
+        days; however, the schedule and availability of these services may vary
+        each year. We cannot guarantee the times or continued operation of these
+        shuttles. For the most current and accurate information, please refer to
+        the
         <a
           href="https://www.pullman-wa.gov/services/transit/football_service.php"
           target="_blank"
-          >Pullman Transit's official Football Service page</a
-        >. Updated details are typically released shortly before the football
-        game series begins.
+          >official Pullman Transit Football Service page</a
+        >. Updated details are typically published shortly before the football
+        season begins.
       </p>
 
-      <!-- Church Parking Information -->
       <section id="church-parking">
         <h2>Paid Parking on College Hill</h2>
         <p>
           Additional parking may be available at the following churches
-          (donations requested $20 - $40 on average):
+          (donations requested $20–$40 on average):
         </p>
         <ul>
           <li>
-            <strong>Pullman Presbyterian Church</strong><br />1630 NE Stadium
-            Way
-            <button class="toggle-btn" onclick="toggleDetails('presbyterian')">
-              View Details
-            </button>
-            <div id="presbyterian" class="parking-details">
-              Price: $20 - $30 (varies by game)
-            </div>
-          </li>
-          <li>
-            <strong>Concordia Lutheran Church</strong><br />1015 NE Orchard Dr.
-            <button class="toggle-btn" onclick="toggleDetails('concordia')">
-              View Details
-            </button>
-            <div id="concordia" class="parking-details">
-              Price: $20 - $40 (varies based on game attendance)
-            </div>
-          </li>
-          <li>
-            <strong>St. James Pullman Church</strong><br />1410 NE Stadium Way
-            <button class="toggle-btn" onclick="toggleDetails('stjames')">
-              View Details
-            </button>
-            <div id="stjames" class="parking-details">
-              - $30 donation per game (cash only) <br />
-              - No vehicles larger than a pickup truck <br />
-              - No RVs or camping <br />
-              - First come, first serve <br />
-              - Lot closes when full, must vacate by 7 AM next day
-            </div>
-          </li>
-          <li>
             <strong>Community Congregational United Church of Christ</strong
-            ><br />525 NE Campus Ave.
+            ><br />
+            525 NE Campus Street
             <button class="toggle-btn" onclick="toggleDetails('ccucc')">
               View Details
             </button>
             <div id="ccucc" class="parking-details">
-              - $20 parking<br />
+              Price: $20<br />
               - Cars only (no RVs or oversized vehicles)<br />
-              - Game day only
             </div>
           </li>
           <li>
-            <strong>Sacred Heart Church</strong><br />400 NE Ash Street.
+            <strong>Concordia Lutheran Church</strong><br />
+            1015 NE Orchard Dr.
+            <button class="toggle-btn" onclick="toggleDetails('concordia')">
+              View Details
+            </button>
+            <div id="concordia" class="parking-details">
+              Price: $20 – $40 (varies based on game attendance)
+            </div>
+          </li>
+          <li>
+            <strong>Pullman Presbyterian Church</strong><br />
+            1630 NE Stadium Way
+            <button class="toggle-btn" onclick="toggleDetails('presbyterian')">
+              View Details
+            </button>
+            <div id="presbyterian" class="parking-details">
+              Price: $20 – $30 (varies by game)
+            </div>
+          </li>
+          <li>
+            <strong>Sacred Heart Catholic Church</strong><br />
+            400 NE Ash Street
             <button class="toggle-btn" onclick="toggleDetails('sacredheart')">
               View Details
             </button>
             <div id="sacredheart" class="parking-details">
-              - Donation $5–$10<br />
+              Price: $5 – $10<br />
               - Availability may vary depending on game
             </div>
           </li>
           <li>
-            <strong>Trinity Lutheran Church</strong><br />1300 NE Lybecker Rd.
+            <strong>St. James Pullman Church</strong><br />
+            1410 NE Stadium Way
+            <button class="toggle-btn" onclick="toggleDetails('stjames')">
+              View Details
+            </button>
+            <div id="stjames" class="parking-details">
+              Price: $30 (cash only)<br />
+              - No vehicles larger than a pickup truck<br />
+              - No RVs or camping<br />
+              - First come, first serve<br />
+              - Lot closes when full, must vacate by 7 AM next day
+            </div>
+          </li>
+          <li>
+            <strong>Trinity Lutheran Church</strong><br />
+            1300 NE Lybecker Rd.
             <button class="toggle-btn" onclick="toggleDetails('trinity')">
               View Details
             </button>
             <div id="trinity" class="parking-details">
-              - $20 per parking spot<br />
-              - Game day and limited overnight RV camping<br />
+              Price: $20 per parking spot<br />
+              - Limited overnight RV camping<br />
               - 90–105 spots available<br />
               - Multiple spots may be needed for larger vehicles
             </div>
@@ -157,15 +215,10 @@
       student collaboration project.
     </footer>
 
-    <!-- Script for toggling parking details -->
     <script>
       function toggleDetails(id) {
         const el = document.getElementById(id);
-        if (el.style.display === "block") {
-          el.style.display = "none";
-        } else {
-          el.style.display = "block";
-        }
+        el.style.display = el.style.display === "block" ? "none" : "block";
       }
     </script>
     <script src="../script.js"></script>
