@@ -145,11 +145,10 @@ nav ul li a:hover {
     top: 10px;
     left: 10px;
   }
- 
   
   .nav-menu {
     position: absolute;
-    top: 60px;
+    top: 77px;
     left: 0;
     background-color: #013964;
     width: 100%;
@@ -179,6 +178,7 @@ nav ul li a:hover {
   .nav-open {
     display: flex !important;
   }
+
 }
 
 /* ============================= */

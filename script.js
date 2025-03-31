@@ -21,6 +21,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ============================= */
+/* Footer on Mobile */
+/* ============================= */
+function updateFooterText() {
+  const footer = document.getElementById("site-footer");
+  if (!footer) return;
+
+  if (window.innerWidth <= 768) {
+    footer.textContent = "Pullman Project 2040. All rights reserved.";
+  } else {
+    footer.textContent =
+      "Pullman Project 2040. All rights reserved. | Developed as part of a student collaboration project.";
+  }
+}
+
+updateFooterText(); // Run on load
+window.addEventListener("resize", updateFooterText); // Run on resize
+
+/* ============================= */
 /* Church Parking Drop Down */
 /* ============================= */
 function toggleDetails(id) {
